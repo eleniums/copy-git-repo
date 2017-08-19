@@ -18,20 +18,20 @@ This script follows the instructions provided by GitHub [here](https://help.gith
 
 1. Create a new repository to copy the source repository to.
 2. Create a temporary clone of the repository you would like to copy:
-```sh
-git clone --bare https://github.com/exampleuser/source-repository.git
-```
+    ```sh
+    git clone --bare https://github.com/exampleuser/source-repository.git
+    ```
 
 3. Push the copy to the new repository:
-```sh
-cd source-repository.git
-git push --mirror https://github.com/exampleuser/destination-repository.git
-```
+    ```sh
+    cd source-repository.git
+    git push --mirror https://github.com/exampleuser/destination-repository.git
+    ```
 
 4. Remove the temporary repository:
-```sh
-cd ..
-rm -rf source-repository.git
-```
+    ```sh
+    cd ..
+    rm -rf source-repository.git
+    ```
 
 NOTE: Additional steps are required if your repository contains Large File Storage objects.
